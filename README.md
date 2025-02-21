@@ -4,21 +4,33 @@
 
 `npm create vite@latest . -- --template vue`
 
+---
+
 2. to view always from the terminal:
 
 `npm i && npm run dev`
 
+---
+
 3. delete the style.css file
+
+---
 
 4. edit the main.js file:
 
 FROM import `'./style.css'` TO import `'./assets/scss/app.scss'`
 
-5. in the 'src' folder --> create 'assets' folder --> create file app.scss 
+---
+
+5. in the 'src' folder --> create 'assets' folder --> create file app.scss
+
+---
 
 6. Install the SASS package from the terminal:
 
 `npm add -D sass`
+
+---
 
 7. install Bootstrap:
 
@@ -27,11 +39,17 @@ FROM import `'./style.css'` TO import `'./assets/scss/app.scss'`
 > [!TIP]
 > (@popperjs/core these are two libraries that allow you to use Bootstrap 100%)
 
+---
+
 8. install vue-router:
 
 `npm install vue-router@4`
 
+---
+
 9. create folder 'views' --> create file 'HomeView.vue'
+
+---
 
 10. modify file 'main.js':
 
@@ -49,6 +67,8 @@ app.use(router)
 app.mount('#app')
 
 ```
+
+---
 
 11. create folder 'router' --> create file 'index.js':
 
@@ -74,3 +94,5 @@ const router = createRouter({
 export default router
 
 ```
+
+---
