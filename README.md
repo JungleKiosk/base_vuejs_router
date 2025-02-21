@@ -14,7 +14,7 @@
 
 FROM import `'./style.css'` TO import `'./assets/scss/app.scss'`
 
-5. in the 'src' folder --> create 'assets' folder --> create app.scss file
+5. in the 'src' folder --> create 'assets' folder --> create file app.scss 
 
 6. Install the SASS package from the terminal:
 
@@ -26,3 +26,34 @@ FROM import `'./style.css'` TO import `'./assets/scss/app.scss'`
 
 > [!TIP]
 > (@popperjs/core these are two libraries that allow you to use Bootstrap 100%)
+
+8. install vue-router:
+
+`npm install vue-router@4`
+
+9. create folder 'views' --> create file 'HomeView.vue'
+
+10. create folder 'router' --> create file 'index.js':
+
+```js
+
+import { createRouter, createWebHistory } from "vue-router";
+
+import home from "../views/HomeView.vue"
+
+/* ------------------------------------------------- */
+
+const router = createRouter({
+    history: createWebHistory(import.meta.env.BASE_URL),
+    routes: [
+        {
+            path: "/",
+            name: "home",
+            component: home
+        }
+    ]
+})
+
+export default router
+
+```
