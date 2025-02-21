@@ -24,4 +24,5 @@ FROM import `'./style.css'` TO import `'./assets/scss/app.scss'`
 
 `npm i bootstrap @popperjs/core`
 
-[!NOTE]>(@popperjs/core these are two libraries that allow you to use Bootstrap 100%)
+> [!TIP]
+> (@popperjs/core these are two libraries that allow you to use Bootstrap 100%)
