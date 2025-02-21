@@ -33,7 +33,24 @@ FROM import `'./style.css'` TO import `'./assets/scss/app.scss'`
 
 9. create folder 'views' --> create file 'HomeView.vue'
 
-10. create folder 'router' --> create file 'index.js':
+10. modify file 'main.js':
+
+```js
+
+import { createApp } from 'vue'
+import './assets/scss/app.scss'
+import App from './App.vue'
+
+import router from "./router/index.js"
+
+const app = createApp(App)
+app.use(router)
+
+app.mount('#app')
+
+```
+
+11. create folder 'router' --> create file 'index.js':
 
 ```js
 
