@@ -13,8 +13,8 @@ export default {
 <template>
     <nav class="navbar">
         <ul>
-            <li><router-link to="/">Home</router-link></li>
-            <li><router-link to="/about">About</router-link></li>
+            <li><router-link to="/">{{ $t('navbar.home') }}</router-link></li>
+            <li><router-link to="/about">{{ $t('navbar.aboutme') }}</router-link></li>
             <li><ColorMode></ColorMode></li>
         </ul>
     </nav>
